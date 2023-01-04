@@ -1,0 +1,160 @@
+[33mcommit 178e44c484261cd99d0347380191aed08c67b615[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: giressesama <gsiledje@gmail.com>
+Date:   Wed Jan 4 14:29:27 2023 +0100
+
+    ma premiere modification
+
+[1mdiff --git a/attendance_report.php b/attendance_report.php[m
+[1mindex 95f5d93..218ec27 100644[m
+[1m--- a/attendance_report.php[m
+[1m+++ b/attendance_report.php[m
+[36m@@ -34,6 +34,7 @@[m [m$start = date("Y-m-d");[m
+ $end = date("Y-m-d");[m
+ if (isset($_GET["start"])) {[m
+     $start = $_GET["start"];[m
+[32m+[m[32m    //voici un commentaire par exemple[m
+ }[m
+ if (isset($_GET["end"])) {[m
+     $end = $_GET["end"];[m
+
+[33mcommit 59458f331a1023ed7603e4ce34e3b48e7f933be9[m
+Author: giressesama <gsiledje@gmail.com>
+Date:   Wed Jan 4 14:23:13 2023 +0100
+
+    version initiale du projet
+
+[1mdiff --git a/.gitattributes b/.gitattributes[m
+[1mnew file mode 100644[m
+[1mindex 0000000..dfe0770[m
+[1m--- /dev/null[m
+[1m+++ b/.gitattributes[m
+[36m@@ -0,0 +1,2 @@[m
+[32m+[m[32m# Auto detect text files and perform LF normalization[m
+[32m+[m[32m* text=auto[m
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mnew file mode 100644[m
+[1mindex 0000000..028f061[m
+[1m--- /dev/null[m
+[1m+++ b/.gitignore[m
+[36m@@ -0,0 +1,2 @@[m
+[32m+[m[32menv.php[m
+[32m+[m[32mvendor[m
+\ No newline at end of file[m
+[1mdiff --git a/LICENSE b/LICENSE[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0ac846e[m
+[1m--- /dev/null[m
+[1m+++ b/LICENSE[m
+[36m@@ -0,0 +1,21 @@[m
+[32m+[m[32mMIT License[m
+[32m+[m
+[32m+[m[32mCopyright (c) 2020 Luis Cabrera Benito[m
+[32m+[m
+[32m+[m[32mPermission is hereby granted, free of charge, to any person obtaining a copy[m
+[32m+[m[32mof this software and associated documentation files (the "Software"), to deal[m
+[32m+[m[32min the Software without restriction, including without limitation the rights[m
+[32m+[m[32mto use, copy, modify, merge, publish, distribute, sublicense, and/or sell[m
+[32m+[m[32mcopies of the Software, and to permit persons to whom the Software is[m
+[32m+[m[32mfurnished to do so, subject to the following conditions:[m
+[32m+[m
+[32m+[m[32mThe above copyright notice and this permission notice shall be included in all[m
+[32m+[m[32mcopies or substantial portions of the Software.[m
+[32m+[m
+[32m+[m[32mTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR[m
+[32m+[m[32mIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,[m
+[32m+[m[32mFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE[m
+[32m+[m[32mAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER[m
+[32m+[m[32mLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,[m
+[32m+[m[32mOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE[m
+[32m+[m[32mSOFTWARE.[m
+[1mdiff --git a/README.md b/README.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0eadf35[m
+[1m--- /dev/null[m
+[1m+++ b/README.md[m
+[36m@@ -0,0 +1,21 @@[m
+[32m+[m[32m# Attendance tracking system with RFID, PHP & MySQL / Sistema de registro de asistencia usando tarjetas RFID programado en PHP y MySQL[m
+[32m+[m[32m[Tutorial](https://parzibyte.me/blog/2020/11/28/sistema-registro-asistencia-tarjetas-rfid/)[m
+[32m+[m
+[32m+[m[32m[Based on this project](https://parzibyte.me/blog/2020/11/22/sistema-registro-asistencia-php-mysql/)[m
+[32m+[m
+[32m+[m[32m![Attendance system in PHP and MySQL by using RFID tags](https://parzibyte.me/blog/wp-content/uploads/2020/11/Emparejamiento-de-tarjeta-RFID-con-empleado-Sistema-de-asistencia-con-PHP-y-MySQL.png)[m
+[32m+[m[32m# Español[m
+[32m+[m[32mSistema de asistencia de empleados usando tarjetas RFID; programado en PHP usando Bootstrap y MySQL[m
+[32m+[m[32m1. Descarga el código y colócalo en tu servidor ya sea local o en internet[m
+[32m+[m[32m2. Crea la base de datos y luego importa las tablas de **schema.sql**[m
+[32m+[m[32m3. Crea el archivo llamado **env.php** a partir del archivo **env.example.php**, y configura las credenciales de acceso a MySQL[m
+[32m+[m[32m4. Disfruta[m
+[32m+[m
+[32m+[m[32mNo olvides seguirme si te ha gustado: https://parzibyte.me/blog/sigueme/[m
+[32m+[m[32m# English[m
+[32m+[m[32mEmployee attendance system written in PHP, Bootstrap and MySQL. The attendance tracking can be taken by using RFID cards[m
+[32m+[m
+[32m+[m[32m1. Download code and put in in your local or internet server[m
+[32m+[m[32m2. Create database and import tables listed in **schema.sql**[m
+[32m+[m[32m3. Create **env.php** file, taking **env.example.php** as example and set your database credentials[m
+[32m+[m[32m4. Enjoy[m
+\ No newline at end of file[m
+[1mdiff --git a/attendance_register.php b/attendance_register.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..89dcf47[m
+[1m--- /dev/null[m
+[1m+++ b/attendance_register.php[m
+[36m@@ -0,0 +1,150 @@[m
+[32m+[m[32m<?php[m
+[32m+[m[32m/*[m
+[32m+[m
+[32m+[m[32m  ____          _____               _ _           _[m[41m       [m
+[32m+[m[32m |  _ \        |  __ \             (_) |         | |[m[41m      [m
+[32m+[m[32m | |_) |_   _  | |__) |_ _ _ __ _____| |__  _   _| |_ ___[m[41m [m
+[32m+[m[32m |  _ <| | | | |  ___/ _` | '__|_  / | '_ \| | | | __/ _ \[m
+[32m+[m[32m | |_) | |_| | | |  | (_| | |   / /| | |_) | |_| | ||  __/[m
+[32m+[m[32m |____/ \__, | |_|   \__,_|_|  /___|_|_.__/ \__, |\__\___|[m
+[32m+[m[32m         __/ |                               __/ |[m[41m        [m
+[32m+[m[32m        |___/                               |___/[m[41m         [m
+[32m+[m[41m    [m
+[32m+[m[32m____________________________________[m
+[32m+[m[32m/ Si necesitas ayuda, contáctame en \[m
+[32m+[m[32m\ https://parzibyte.me               /[m
+[32m+[m[32m ------------------------------------[m
+[32m+[m[32m        \   ^__^[m
+[32m+[m[32m         \  (oo)\_______[m
+[32m+[m[32m            (__)\       )\/\[m
+[32m+[m[32m                ||----w |[m
+[32m+[m[32m                ||     ||[m
+[32m+[m[32mCreado por Parzibyte (https://parzibyte.me).[m
+[32m+[m[32m------------------------------------------------------------------------------------------------[m
+[32m+[m[32mSi el código es útil para ti, puedes agradecerme siguiéndome: https://parzibyte.me/blog/sigueme/[m
+[32m+[m[32mY compartiendo mi blog con tus amigos[m
+[32m+[m[32mTambién tengo canal de YouTube: https://www.youtube.com/channel/UCroP4BTWjfM0CkGB6AFUoBg?sub_confirmation=1[m
+[32m+[m[32m------------------------------------------------------------------------------------------------[m
+[32m+[m[32m*/ ?>[m
+[32m+[m[32m<?php[m
+[32m+[m[32minclude_once "header.php";[m
+[32m+[m[32minclude_once "nav.php";[m
+[32m+[m[32m?>[m
+[32m+[m[32m<div class="row" id="app">[m
+[32m+[m[32m    <div class="col-12">[m
+[32m+[m[32m        <h1 class="text-center">Attendance</h1>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m    <div class="col-12">[m
+[32m+[m[32m        <div class="form-inline mb-2">[m
+[32m+[m[32m            <label for="date">Date: &nbsp;</label>[m
+[32m+[m[32m            <input @change="refreshEmployeesList" v-model="date" name="date" id="date" type="date" class="form-control">[m
+[32m+[m[32m            <button @click="save" class="btn btn-success ml-2">Save</button>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m    <div class="col-12">[m
+[32m+[m[32m        <div class="table-responsive">[m
+[32m+[m[32m            <table class="table">[m
+[32m+[m[32m                <thead>[m
+[32m+[m[32m                    <tr>[m
+[32m+[m[32m                        <th>[m
+[32m+[m[32m                            Employee[m
+[32m+[m[32m                        </th>[m
+[32m+[m[32m                        <th>[m
+[32m+[m[32m                            Status[m
+[32m+[m[32m                        </th>[m
+[32m+[m[32m                    </tr>[m
+[32m+[m[32m                </thead>[m
+[32m+[m[32m            

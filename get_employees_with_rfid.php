@@ -28,3 +28,4 @@ También tengo canal de YouTube: https://www.youtube.com/channel/UCroP4BTWjfM0Ck
 */ ?><?php
 include_once "functions.php";
 echo json_encode(getEmployeesWithRfid());
+//voici un 2e commentaire

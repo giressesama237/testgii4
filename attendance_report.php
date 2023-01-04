@@ -34,6 +34,7 @@ $start = date("Y-m-d");
 $end = date("Y-m-d");
 if (isset($_GET["start"])) {
     $start = $_GET["start"];
+    //voici un commentaire par exemple
 }
 if (isset($_GET["end"])) {
     $end = $_GET["end"];
